@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+<div class="container">
+  <div class="auth-container">
+    <h1>Sign Up</h1>
+    <% if (typeof error !== 'undefined') { %>
+      <div class="error"><%= error %></div>
+    <% } %>
+    <form action="/signup" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="/login">Login</a></p>
+  </div>
+</div>
+<%- include('partials/footer') %>

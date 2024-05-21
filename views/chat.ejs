@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+<div class="chat-container">
+  <div class="sidebar">
+    <h2>Friends</h2>
+    <ul id="friends-list">
+      <% friends.forEach(friend => { %>
+      <li><%= friend.username %></li>
+      <% }) %>
+    </ul>
+    <input type="text" id="friend-username" placeholder="Add friend by username">
+    <button id="add-friend-button">Add Friend</button>
+
+    <h2>Friend Requests</h2>
+    <ul id="friend-requests">
+      <% friendRequests.forEach(request => { %>
+      <li>
+        <%= request.username %>
+        <button class="accept-request" data-id="<%= request.id %>">Accept</button>
+        <button class="deny-request" data-id="<%= request.id %>">Deny</button>
+      </li>
+      <% }) %>
+    </ul>
+
+    <h2>Outgoing Requests</h2>
+    <ul id="outgoing-requests">
+      <% outgoingRequests.forEach(request => { %>
+      <li>
+        <%= request.receiverId %> (pending)
+      </li>
+      <% }) %>
+    </ul>
+
+    <h2>Incoming Requests</h2>
+    <ul id="incoming-requests">
+      <% incomingRequests.forEach(request => { %>
+      <li>
+        <%= request.senderId %>
+      </li>
+      <% }) %>
+    </ul>
+  </div>
+  <div class="chat-main">
+    <h1>Welcome, <%= username %></h1>
+    <div class="chat-window" id="chat-window"></div>
+    <div class="chat-input">
+      <input type="text" id="message-input" placeholder="Type your message">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer') %>
