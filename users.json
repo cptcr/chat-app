@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1716287556528",
+    "username": "toowake",
+    "password": "$2b$10$X85.sMmMhUV/0NMVtVGE.OLcMEv9K3Bdj4fXGtZwwpGkrviL2Ptfe",
+    "friends": []
+  },
+  {
+    "id": "1716287692708",
+    "username": "Test",
+    "password": "$2b$10$3pvNI.P24AP57jzQZY.c1eFd1i6.q4e35x243wgZjvUgaHWMOzYSW",
+    "friends": []
+  },
+  {
+    "id": "1716289798407",
+    "username": "t",
+    "password": "$2b$10$F6ojCrAwoUi5IZE5KXwOyuwukkUljSiuR1BGR77MJ2UQaOfSybFsu",
+    "friends": [],
+    "friendRequests": []
+  }
+]

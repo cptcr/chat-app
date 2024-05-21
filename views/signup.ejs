@@ -1,0 +1,14 @@
+<%- include('layout') %>
+<div class="auth-container">
+  <h1>Sign Up</h1>
+  <% if (typeof error !== 'undefined') { %>
+  <p class="error"><%= error %></p>
+  <% } %>
+  <form action="/signup" method="POST">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Sign Up</button>
+  </form>
+  <p>Already have an account? <a href="/login">Sign In</a></p>
+</div>
+<%- include('footer') %>

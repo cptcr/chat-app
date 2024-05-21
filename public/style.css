@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .auth-container, .chat-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .auth-container input, .chat-input input, .sidebar input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .auth-container button, .chat-input button, .sidebar button {
+    padding: 10px 15px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .auth-container button:hover, .chat-input button:hover, .sidebar button:hover {
+    background: #0056b3;
+  }
+  
+  .chat-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .chat-main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .chat-window {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    background: #f9f9f9;
+  }
+  
+  .chat-message {
+    margin-bottom: 10px;
+  }
+  
+  .chat-message strong {
+    color: #007bff;
+  }
+  
+  .chat-message em {
+    color: #999;
+    font-size: 0.9em;
+  }
+  
+  .chat-input {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .dark-theme {
+    background-color: #2c2c2c;
+    color: #f4f4f4;
+  }
+  
+  .dark-theme .auth-container, .dark-theme .chat-container, .dark-theme .sidebar, .dark-theme .chat-window {
+    background: #333;
+    color: #f4f4f4;
+  }
+  
+  .dark-theme .chat-input input, .dark-theme .sidebar input, .dark-theme .auth-container input {
+    background: #444;
+    border: 1px solid #555;
+    color: #f4f4f4;
+  }
+  
+  .dark-theme .auth-container button, .dark-theme .chat-input button, .dark-theme .sidebar button {
+    background: #0056b3;
+  }
+  
+  .dark-theme .chat-input button:hover, .dark-theme .sidebar button:hover, .dark-theme .auth-container button:hover {
+    background: #003b7f;
+  }
+  
+  .notification {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s, fadeOut 0.5s 4.5s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
